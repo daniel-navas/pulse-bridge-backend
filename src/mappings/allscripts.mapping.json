@@ -1,0 +1,62 @@
+{
+  "name": {
+    "key": "NAME_OF_PAT",
+    "endpoint": "info"
+  },
+  "gender": {
+    "key": "GENDER_PAT",
+    "endpoint": "info"
+  },
+  "dob": {
+    "key": "BIRTHDATE_OF_PAT",
+    "endpoint": "info"
+  },
+  "address": {
+    "key": "ADDRESS_PAT",
+    "endpoint": "info"
+  },
+  "phone": {
+    "key": "PHONE_NUMBER_PAT",
+    "endpoint": "info"
+  },
+  "email": {
+    "key": "EMAIL_ID_PAT",
+    "endpoint": "info"
+  },
+  "emergencyContact": {
+    "key": "EMERGENCY_CONTACT_PAT",
+    "endpoint": "info"
+  },
+  "insuranceProvider": {
+    "key": "PROVIDER_INSURANCE_PAT",
+    "endpoint": "insurance"
+  },
+  "insurancePolicyNumber": {
+    "key": "POLICY_NUM_INSURANCE_PAT",
+    "endpoint": "insurance"
+  },
+  "primaryCarePhysician": {
+    "key": "PRIMARY_CARE_DOC_PAT",
+    "endpoint": "info"
+  },
+  "allergies": {
+    "key": "ALLERGIES_PAT",
+    "endpoint": "history"
+  },
+  "currentMedications": {
+    "key": "CURRENT_MEDS_PAT",
+    "endpoint": "history"
+  },
+  "medicalHistory": {
+    "key": "HISTORY_MEDICAL_PAT",
+    "endpoint": "history"
+  },
+  "socialHistory": {
+    "key": "SOCIAL_HISTORY_PAT",
+    "endpoint": "history"
+  },
+  "familyHistory": {
+    "key": "FAMILY_HISTORY_PAT",
+    "endpoint": "history"
+  }
+}

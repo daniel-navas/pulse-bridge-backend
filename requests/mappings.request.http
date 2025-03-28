@@ -1,0 +1,67 @@
+### Successful Mapping Retrieval for Allscripts
+GET http://localhost:3000/mappings/allscripts
+Accept: application/json
+
+### Successful Mapping Retrieval for Athena
+GET http://localhost:3000/mappings/athena
+Accept: application/json
+
+### Error Case: Non-Existent Mapping
+GET http://localhost:3000/mappings/nonexistent
+Accept: application/json
+
+### Successful Update for Allscripts
+PUT http://localhost:3000/mappings/allscripts
+Content-Type: application/json
+
+{
+    "name": {
+        "key": "NAME_OF_PAT_TEMPORAL"
+    },
+    "gender": {
+        "key": "GENDER_PAT_TEMPORAL"
+    },
+    "newTemporalField1": {
+        "key": "NEW_FIELD_1_TEMPORAL"
+    },
+    "newTemporalField2": {
+        "key": "NEW_FIELD_2_TEMPORAL"
+    }
+}
+
+### Successful Update for Athena
+PUT http://localhost:3000/mappings/athena
+Content-Type: application/json
+
+{
+    "name": {
+        "key": "PATIENT_IDENT_NAME_TEMPORAL"
+    },
+    "dob": {
+        "key": "DATE_OF_BIRTH_PATIENT_TEMPORAL"
+    },
+    "newTemporalField3": {
+        "key": "NEW_FIELD_3_TEMPORAL"
+    },
+    "newTemporalField4": {
+        "key": "NEW_FIELD_4_TEMPORAL"
+    }
+}
+
+### Error Case: Invalid EHR Update
+PUT http://localhost:3000/mappings/invalidEHR
+Content-Type: application/json
+
+{
+    "name": {
+        "key": "NAME_OF_PAT_TEMPORAL"
+    }
+}
+
+### Error Case: Invalid Body Format
+PUT http://localhost:3000/mappings/allscripts
+Content-Type: application/json
+
+{
+    "invalidField": "This should be an object with a key property."
+}

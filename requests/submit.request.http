@@ -1,0 +1,74 @@
+### Successful Submission for Allscripts
+POST http://localhost:3000/submit
+Content-Type: application/json
+
+{
+    "ehr": "allscripts",
+    "patient": {
+        "name": "Alice Smith",
+        "gender": "Female",
+        "dob": "1985-05-15",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "email": "alice.smith@example.com",
+        "emergencyContact": "Bob Smith",
+        "insuranceProvider": "Global Health Insurance",
+        "insurancePolicyNumber": "XYZ987654",
+        "primaryCarePhysician": "Dr. Johnson",
+        "allergies": "Penicillin",
+        "currentMedications": "Lisinopril",
+        "medicalHistory": "Hypertension",
+        "socialHistory": "Occasional drinker",
+        "familyHistory": "Diabetes"
+    }
+}
+
+### Successful Submission for Athena
+POST http://localhost:3000/submit
+Content-Type: application/json
+
+{
+    "ehr": "athena",
+    "patient": {
+        "name": "John Doe",
+        "gender": "Male",
+        "dob": "1990-01-01",
+        "address": "123 Main St",
+        "phone": "123-456-7890",
+        "email": "john.doe@example.com",
+        "emergencyContact": "Jane Doe",
+        "insuranceProvider": "Health Insurance Co.",
+        "insurancePolicyNumber": "ABC123456",
+        "primaryCarePhysician": "Dr. Smith",
+        "allergies": "None",
+        "currentMedications": "None",
+        "medicalHistory": "No significant history",
+        "socialHistory": "Non-smoker",
+        "familyHistory": "No known issues"
+    }
+}
+
+### Error Case: Missing Required Fields
+POST http://localhost:3000/submit
+Content-Type: application/json
+
+{
+    "ehr": "allscripts",
+    "patient": {
+        "name": "",
+        "gender": "Female",
+        "dob": "1985-05-15",
+        "address": "456 Elm St",
+        "phone": "987-654-3210",
+        "email": "alice.smith@example.com",
+        "emergencyContact": "Bob Smith",
+        "insuranceProvider": "Global Health Insurance",
+        "insurancePolicyNumber": "XYZ987654",
+        "primaryCarePhysician": "Dr. Johnson",
+        "allergies": "Penicillin",
+        "currentMedications": "Lisinopril",
+        "medicalHistory": "Hypertension",
+        "socialHistory": "Occasional drinker",
+        "familyHistory": "Diabetes"
+    }
+}

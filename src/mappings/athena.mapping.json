@@ -1,0 +1,62 @@
+{
+  "name": {
+    "key": "PATIENT_IDENT_NAME",
+    "endpoint": "details"
+  },
+  "gender": {
+    "key": "GENDER_OF_PATIENT",
+    "endpoint": "details"
+  },
+  "dob": {
+    "key": "DATE_OF_BIRTH_PATIENT",
+    "endpoint": "details"
+  },
+  "address": {
+    "key": "PATIENT_LOCATION_ADDRESS",
+    "endpoint": "details"
+  },
+  "phone": {
+    "key": "TELEPHONE_NUMBER_PATIENT",
+    "endpoint": "details"
+  },
+  "email": {
+    "key": "PATIENT_EMAIL_ID",
+    "endpoint": "details"
+  },
+  "emergencyContact": {
+    "key": "EMERGENCY_CONTACT_PATIENT",
+    "endpoint": "details"
+  },
+  "insuranceProvider": {
+    "key": "INSURANCE_PROVIDER_PATIENT",
+    "endpoint": "coverage"
+  },
+  "insurancePolicyNumber": {
+    "key": "POLICY_NUMBER_INSURANCE_PATIENT",
+    "endpoint": "coverage"
+  },
+  "primaryCarePhysician": {
+    "key": "PRIMARY_CARE_DOCTOR_PATIENT",
+    "endpoint": "details"
+  },
+  "allergies": {
+    "key": "ALLERGIES_PATIENT",
+    "endpoint": "details"
+  },
+  "currentMedications": {
+    "key": "PATIENT_MEDICATIONS_CURRENT",
+    "endpoint": "details"
+  },
+  "medicalHistory": {
+    "key": "HISTORY_MEDICAL_PATIENT",
+    "endpoint": "records"
+  },
+  "socialHistory": {
+    "key": "HISTORY_SOCIAL_PATIENT",
+    "endpoint": "records"
+  },
+  "familyHistory": {
+    "key": "HISTORY_FAMILY_PATIENT",
+    "endpoint": "records"
+  }
+}
